@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_activity_title">Discover \nRestaurants</string>
+    <string name="lbl_restaurant_name">Mexican Bite</string>
+    <string name="lbl_rating">4.0</string>
+    <string name="title_activity_detail_restaurant">DetailRestaurantActivity</string>
+    <string name="lbl_restaurant_detail_name">Pickle Jam, \nAnd Chutney</string>
+
+    <string name="lorem_ipsum">Pro an luptatum assentior, no audiam forensibus mei, vis et idque iisque. Diam posse dolore ei vel. Pro dolor ponderum pertinax ex, malorum adipisci persecuti pro ei. Wisi mediocrem sit in. Est omnium iuvaret et, ex sed simul nemore numquam, ne soleat tractatos reprimique per.</string>
+    <string name="lbl_location">1.5 Km</string>
+    <string name="lbl_map_view">Map View</string>
+    <string name="lbl_delivery">Delivery</string>
+
+</resources>

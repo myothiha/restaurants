@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorSecondary">
+
+    <TextView
+        android:id="@+id/tv_restaurant_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/lbl_restaurant_detail_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:src="@drawable/ic_navigation"
+        android:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_restaurant_name"
+        android:layout_alignLeft="@id/tv_restaurant_name"
+        android:layout_alignRight="@id/iv_navigation"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_restaurant_detail"
+        android:layout_alignLeft="@id/tv_restaurant_name"
+        android:layout_alignRight="@id/iv_navigation"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageButton
+                android:id="@+id/ib_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="@color/babIconColor"
+                android:padding="@dimen/margin_medium"
+                android:src="@drawable/ic_world"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_distance"
+                android:layout_centerHorizontal="true"
+                android:text="10am - 10pm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:id="@+id/ib_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="@color/babIconColor"
+                android:padding="@dimen/margin_medium"
+                android:src="@drawable/ic_icons8_location_off" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_location"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lbl_location" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:id="@+id/ib_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="@color/babIconColor"
+                android:padding="@dimen/margin_small"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_map"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lbl_map_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:id="@+id/ib_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:background="@drawable/rounded_shape"
+                android:backgroundTint="@color/babIconColor"
+                android:padding="@dimen/margin_medium"
+                android:src="@drawable/ic_world" />
+
+            <TextView
+                android:id="@+id/tv_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_delivery"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lbl_delivery" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

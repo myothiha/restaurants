@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f1c2d</color>
+    <color name="colorPrimaryDark">#830505</color>
+    <color name="colorSecondary">#38354a</color>
+    <color name="colorAccent">#0b7bea</color>
+    <color name="primary_text">#000000</color>
+    <color name="secondary_text">#757575</color>
+    <color name="news_text">#FFFFFF</color>
+    <color name="tool_bar_primary">#D32F2F</color>
+    <color name="statusBarColor">#830505</color>
+    <color name="babIconColor">#54525f</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="pearl_white">#F2F2F2</color>
+    <color name="divider_color">#BDBDBD</color>
+</resources>

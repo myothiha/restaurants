@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="@dimen/margin_medium_3"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium_3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/mc_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/corner_material_card"
+        android:layout_marginBottom="@dimen/margin_xxlarge">
+
+            <ImageView
+                android:id="@+id/iv_restaurant_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food1" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_primary_blur">
+
+                <ImageView
+                    android:id="@+id/iv_home_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_home_button"
+                    android:tint="@color/babIconColor" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/tv_restaurant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_home_btn"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/iv_home_btn"
+                    android:text="@string/lbl_restaurant_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_restaurant_name"
+                    android:layout_alignLeft="@id/tv_restaurant_name"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/lbl_rating"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/tv_about_restaurant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_rating"
+                    android:layout_alignLeft="@id/tv_restaurant_name"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Mexican - 18 Lane Hip Spot for Maxican tapas with a patio Open until 12:00 AM."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular" />
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/iv_home_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_xlarge"
+                    android:src="@drawable/ic_navigation"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/babIconColor"
+        android:text="N Cedar St &amp; Seeder"
+        app:cornerRadius="@dimen/margin_medium_3"
+        app:layout_anchor="@id/mc_card"
+        app:layout_anchorGravity="bottom|center"/>
+
+</android.support.design.widget.CoordinatorLayout>
